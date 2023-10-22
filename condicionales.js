@@ -16,6 +16,7 @@ function zodiac (day, month){
 }}
 
 // en Ternario
+
 function zodiacc (day, month) {return (month == 1 && day <= 20) || (month == 12 && day >=22) ? "Capricornio" :
            (month == 1 && day >= 21) || (month == 2 && day <= 18) ? "Acuario" :
            (month == 2 && day >= 19) || (month == 3 && day <= 20) ? "Piscis" :
@@ -24,8 +25,8 @@ function zodiacc (day, month) {return (month == 1 && day <= 20) || (month == 12 
            (month == 5 && day >= 21) || (month == 6 && day <= 20) ? "Géminis" : "undefined"}
            
            
-let Manu = zodiacc(10, 1);
-console.log(Manu);
+// let Manu = zodiacc(10, 1);
+// console.log(Manu);
 
 // Dado el nombre de un país te imprima en que continente estás
 
@@ -34,8 +35,8 @@ function continent(country) {return ((country == "Nigeria") || (country == "Keny
     ((country == "Thailand") || (country == "Philipines") || (country == "Indonesia") || (country == "Vietnam") || (country == "Malasya")) ? "Asia" : undefined
 };
 
-let pais = continent("Spain");
-console.log(pais);
+// let pais = continent("Spain");
+// console.log(pais);
 
 // Realizar una función que te imprima por consola el siguiente mensaje: “El numero es par”, si es par o numero es impar
 
@@ -47,5 +48,7 @@ function isEven(number) {
     }
 }
 
-let numeropar = isEven(20);
-console.log(numeropar); 
+module.exports = isEven;
+
+// let numeropar = isEven(20);
+// console.log(numeropar); 
